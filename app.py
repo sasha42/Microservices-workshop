@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 def get_yes_or_no():
-  resp = requests.get('https://github.com/toddmotto/public-apis')
+  resp = requests.get('https://yesno.wtf/api')
   yes_or_no = resp.json()['answer']
   return yes_or_no
 
